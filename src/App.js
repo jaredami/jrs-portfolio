@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="jumbotron">
-          <div className="wrapper">
+          <div className="nav-wrapper">
             <ul id="nav-list">
               <li>About</li>
               <li>Work</li>
@@ -18,6 +18,7 @@ class App extends Component {
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
         </div>
+        )}
       </div>
     );
   }

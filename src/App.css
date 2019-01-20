@@ -7,9 +7,10 @@
   width: 100vw;
   height: 100vh;
   background: url(images/jrsrichmond.jpg) no-repeat center;
+  animation: intro 1s;
 }
 
-.wrapper {
+.nav-wrapper {
   text-align: center;
 }
 
@@ -22,6 +23,7 @@
   font-size: 6vh;
   font-weight: 600;
   text-shadow: 2px 4px 10px black;
+  animation: intro 3s;
 }
 
 #nav-list li {
@@ -46,6 +48,7 @@
   font-family: "Brush Script MT", cursive;
   text-shadow: 2px 4px 10px black;
   font-size: 5vw;
+  animation: fall 2s ease-out;
 }
 
 #intro {
@@ -66,5 +69,25 @@
   }
   #info {
     font-size: 5vw;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  from {
+    opacity: 0;
+    /* margin-top: 0px; */
+  }
+  to {
+    opacity: 1;
+    /* margin-top: 60vh; */
   }
 }
