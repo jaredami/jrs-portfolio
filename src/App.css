@@ -3,11 +3,14 @@
   padding: 0;
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+}
+
 #jumbotron {
   width: 100vw;
   height: 100vh;
   background: url(images/jrsrichmond.jpg) no-repeat center;
-  animation: intro 1s;
 }
 
 .nav-wrapper {
@@ -19,15 +22,14 @@
   margin-top: 5vh;
   list-style-type: none;
   color: #f5f5f5;
-  font-family: "Cutive Mono", monospace;
-  font-size: 6vh;
-  font-weight: 600;
-  text-shadow: 2px 4px 10px black;
-  animation: intro 3s;
+  /* font-family: "Cutive Mono", monospace; */
+  font-size: 5vh;
+  /* font-weight: 600; */
+  text-shadow: 0px 0px 20px black;
 }
 
 #nav-list li {
-  margin: 0 2vw;
+  margin: 0 3vw;
   display: inline;
   transition: all ease 300ms;
 }
@@ -35,29 +37,53 @@
 #nav-list li:hover {
   cursor: pointer;
   color: #9ab3c9;
-  /* letter-spacing: 1.5px; */
+  letter-spacing: 1.1px;
   text-shadow: 2px 4px 10px black;
-}
-
-.dark-wrapper {
-  margin-top: 60vh;
-  padding: 30px 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  color: #f5f5f5;
-  font-family: "Brush Script MT", cursive;
-  text-shadow: 2px 4px 10px black;
-  font-size: 5vw;
-  animation: fall 2s ease-out;
 }
 
 #intro {
+  transform: translateY(55vh);
+  padding: 10px 0px;
+  text-align: center;
   font-size: 10vh;
+  /* font-family: "Brush Script MT", cursive; */
+  font-family: "Lobster", cursive;
+  color: #f5f5f5;
+  text-shadow: 0px 0px 20px black;
+  animation: intro 2s;
+}
+
+.dark-wrapper {
+  transform: translateY(55vh);
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  /* animation: fall 2s ease-out; */
 }
 
 #info {
-  font-family: "Cutive Mono", monospace;
+  /* font-family: "Cutive Mono", monospace; */
+  /* font-family: "Linden Hill", serif; */
   font-size: 4vh;
+  color: #f5f5f5;
+  letter-spacing: 1.2px;
+  text-shadow: 0px 0px 20px black;
+}
+
+#down-arrow {
+  width: 50px;
+  transform: translateY(60vh);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: bounce 1s infinite ease-out;
+}
+
+#down-arrow:hover {
+  cursor: pointer;
+  width: 55px;
+  transition: 300ms all ease;
 }
 
 @media screen and (max-width: 760px) {
@@ -68,26 +94,28 @@
     font-size: 12vw;
   }
   #info {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 }
 
 @keyframes intro {
   0% {
     opacity: 0;
+    letter-spacing: 5px;
   }
   100% {
     opacity: 1;
+    letter-spacing: 0px;
   }
 }
-
-@keyframes fall {
-  from {
-    opacity: 0;
-    /* margin-top: 0px; */
+@keyframes bounce {
+  0% {
+    transform: translateY(60vh);
   }
-  to {
-    opacity: 1;
-    /* margin-top: 60vh; */
+  50% {
+    transform: translateY(59vh);
+  }
+  100% {
+    transform: translateY(60vh);
   }
 }

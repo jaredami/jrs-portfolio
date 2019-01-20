@@ -13,12 +13,16 @@ class App extends Component {
               <li>Contact</li>
             </ul>
           </div>
+          <h1 id="intro">Hi, I'm Jared.</h1>
           <div className="dark-wrapper">
-            <h1 id="intro">Hi, I'm Jared</h1>
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
+          <img
+            id="down-arrow"
+            src={require(`./images/down-arrow.png`)}
+            alt="down arrow"
+          />
         </div>
-        )}
       </div>
     );
   }
