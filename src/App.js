@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import About from "./components/About";
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
               <li>Contact</li>
             </ul>
           </div>
-          <h1 id="intro">Hi, I'm Jared.</h1>
+          <h1 id="greeting">Hi, I'm Jared.</h1>
           <div className="dark-wrapper">
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
@@ -23,6 +24,7 @@ class App extends Component {
             alt="down arrow"
           />
         </div>
+        <About />
       </div>
     );
   }
