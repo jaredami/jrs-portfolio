@@ -4,9 +4,9 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      musicianOpacity: 0,
-      philosopherOpacity: 0,
-      webdevOpacity: 0
+      musicianOpacity: 0.1,
+      philosopherOpacity: 0.1,
+      webdevOpacity: 0.1
     };
   }
 
@@ -27,17 +27,17 @@ class About extends Component {
   };
   handleMusicianMouseLeave = () => {
     this.setState({
-      musicianOpacity: 0
+      musicianOpacity: 0.1
     });
   };
   handlePhilosopherMouseLeave = () => {
     this.setState({
-      philosopherOpacity: 0
+      philosopherOpacity: 0.1
     });
   };
   handleWebdevMouseLeave = () => {
     this.setState({
-      webdevOpacity: 0
+      webdevOpacity: 0.1
     });
   };
 
@@ -59,13 +59,12 @@ class About extends Component {
             >
               <h1>Musician</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                quis neque sed dui tincidunt scelerisque eu et ante. Phasellus
-                ac dui rutrum, faucibus purus at, iaculis dolor. Nam aliquet est
-                eu felis vehicula, at suscipit purus porta. Aenean placerat
-                luctus turpis, non faucibus risus. Maecenas erat ligula,
-                dignissim eget neque at, facilisis feugiat dolor. Donec ac
-                tempor mi. Morbi nec dapibus ligula, nec interdum felis.{" "}
+                I played lead guitar for Forevermore for many years. We signed a
+                record deal with Solid State Records, released four full length
+                albums, and toured across the country numerous times between
+                2011 and 2016. Out last album charted at #8 on the HeatSeekers
+                charts, #15 on the Hard Music charts, and #121 on the top 200
+                Billboard charts.
               </p>
             </div>
           </div>
@@ -83,13 +82,12 @@ class About extends Component {
             >
               <h1>Philosopher</h1>
               <p>
-                Nulla feugiat elit ut libero fermentum, sed tristique metus
-                feugiat. Nam imperdiet lectus orci, eget luctus nibh ullamcorper
-                nec. Proin non orci blandit, dapibus libero ut, imperdiet est.
-                Suspendisse et elit tempus, lacinia tellus a, condimentum diam.
-                Fusce sed posuere dui. Nulla fringilla ex non ipsum malesuada
-                bibendum. Sed eu tellus bibendum, sagittis orci non, rhoncus
-                nulla.
+                After calling it quits with the band, I returned to school to
+                study philosophy, a subject for which I had developed a deep
+                passion and interest. I completed my B.A. in December of 2017
+                and expect to receive my M.A. in May of 2019. My primary
+                fascinations concern question regarding consciousness and
+                perception.
               </p>
             </div>
           </div>
@@ -107,12 +105,11 @@ class About extends Component {
             >
               <h1>Web Developer</h1>
               <p>
-                Sed dignissim finibus vestibulum. Interdum et malesuada fames ac
-                ante ipsum primis in faucibus. Duis ultrices felis nisl. Ut in
-                mi ultricies, placerat ipsum ut, imperdiet ligula. Nullam
-                bibendum et tellus ut sollicitudin. Morbi sit amet elit mollis,
-                mollis leo ullamcorper, tempus magna. Curabitur at magna auctor,
-                ultricies nisl in, suscipit ipsum.
+                I picked up programming during the final semester of my B.A. and
+                quickly fell in love with creating things with code. I have
+                found that web development offers much of what I love about both
+                music and philosophy as it enables me to express both my
+                creative and analytic capacities.
               </p>
             </div>
           </div>

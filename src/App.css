@@ -130,7 +130,8 @@ body {
 .about-icons {
   font-size: 15vmin;
   /* color: #133810; */
-  color: #9ab3c9;
+  /* color: #9ab3c9; */
+  color: #212426;
   background: none;
   border: none;
   padding: 0px;
@@ -142,7 +143,8 @@ body {
 .about-icons:hover {
   /* animation: pulsate-bck 0.5s ease-in-out both; */
   transform: scale(1.2);
-  filter: brightness(130%);
+  /* filter: brightness(130%); */
+  color: #9ab3c9;
 }
 
 .about-arrows {
@@ -154,10 +156,9 @@ body {
 }
 
 .about-text {
-  background-color: #111111;
-  border: 6px solid #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 2px 5px 10px #0a0a0a;
+  /* background-color: #111111; */
+  /* border-radius: 10px;
+  box-shadow: 2px 5px 10px #0a0a0a; */
   padding: 20px;
 }
 
@@ -166,12 +167,13 @@ body {
   letter-spacing: 1.2px;
   font-weight: 400;
   color: #9ab3c9;
-  filter: brightness(130%);
+  /* filter: brightness(130%); */
   transition: all 300ms ease;
 }
 
 #about-grid p {
   font-size: 2.5vmin;
+  letter-spacing: 1.2px;
   transition: all 300ms ease;
 }
 
