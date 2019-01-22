@@ -53,6 +53,21 @@ class About extends Component {
               onMouseEnter={this.handleMusicianMouseEnter}
               onMouseLeave={this.handleMusicianMouseLeave}
             />
+            <div
+              className="about-text"
+              style={{ opacity: `${this.state.musicianOpacity}` }}
+            >
+              <h1>Musician</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                quis neque sed dui tincidunt scelerisque eu et ante. Phasellus
+                ac dui rutrum, faucibus purus at, iaculis dolor. Nam aliquet est
+                eu felis vehicula, at suscipit purus porta. Aenean placerat
+                luctus turpis, non faucibus risus. Maecenas erat ligula,
+                dignissim eget neque at, facilisis feugiat dolor. Donec ac
+                tempor mi. Morbi nec dapibus ligula, nec interdum felis.{" "}
+              </p>
+            </div>
           </div>
           <div className="ion-arrow-right-c about-arrows" />
           <div>
@@ -62,6 +77,21 @@ class About extends Component {
               onMouseEnter={this.handlePhilosopherMouseEnter}
               onMouseLeave={this.handlePhilosopherMouseLeave}
             />
+            <div
+              className="about-text"
+              style={{ opacity: `${this.state.philosopherOpacity}` }}
+            >
+              <h1>Philosopher</h1>
+              <p>
+                Nulla feugiat elit ut libero fermentum, sed tristique metus
+                feugiat. Nam imperdiet lectus orci, eget luctus nibh ullamcorper
+                nec. Proin non orci blandit, dapibus libero ut, imperdiet est.
+                Suspendisse et elit tempus, lacinia tellus a, condimentum diam.
+                Fusce sed posuere dui. Nulla fringilla ex non ipsum malesuada
+                bibendum. Sed eu tellus bibendum, sagittis orci non, rhoncus
+                nulla.
+              </p>
+            </div>
           </div>
           <div className="ion-arrow-right-c about-arrows" />
           <div>
@@ -71,52 +101,21 @@ class About extends Component {
               onMouseEnter={this.handleWebdevMouseEnter}
               onMouseLeave={this.handleWebdevMouseLeave}
             />
+            <div
+              className="about-text"
+              style={{ opacity: `${this.state.webdevOpacity}` }}
+            >
+              <h1>Web Developer</h1>
+              <p>
+                Sed dignissim finibus vestibulum. Interdum et malesuada fames ac
+                ante ipsum primis in faucibus. Duis ultrices felis nisl. Ut in
+                mi ultricies, placerat ipsum ut, imperdiet ligula. Nullam
+                bibendum et tellus ut sollicitudin. Morbi sit amet elit mollis,
+                mollis leo ullamcorper, tempus magna. Curabitur at magna auctor,
+                ultricies nisl in, suscipit ipsum.
+              </p>
+            </div>
           </div>
-
-          <div style={{ opacity: `${this.state.musicianOpacity}` }}>
-            <h1>Musician</h1>
-            <h1>2013-2016</h1>
-          </div>
-
-          <div />
-          <div style={{ opacity: `${this.state.philosopherOpacity}` }}>
-            <h1>Philosopher</h1>
-            <h1>2015-2019</h1>
-          </div>
-
-          <div />
-          <div style={{ opacity: `${this.state.webdevOpacity}` }}>
-            <h1>Web Developer</h1>
-            <h1>2017-2019</h1>
-          </div>
-
-          <p style={{ opacity: `${this.state.musicianOpacity}` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis
-            neque sed dui tincidunt scelerisque eu et ante. Phasellus ac dui
-            rutrum, faucibus purus at, iaculis dolor. Nam aliquet est eu felis
-            vehicula, at suscipit purus porta. Aenean placerat luctus turpis,
-            non faucibus risus. Maecenas erat ligula, dignissim eget neque at,
-            facilisis feugiat dolor. Donec ac tempor mi. Morbi nec dapibus
-            ligula, nec interdum felis.{" "}
-          </p>
-          <div />
-          <p style={{ opacity: `${this.state.philosopherOpacity}` }}>
-            Nulla feugiat elit ut libero fermentum, sed tristique metus feugiat.
-            Nam imperdiet lectus orci, eget luctus nibh ullamcorper nec. Proin
-            non orci blandit, dapibus libero ut, imperdiet est. Suspendisse et
-            elit tempus, lacinia tellus a, condimentum diam. Fusce sed posuere
-            dui. Nulla fringilla ex non ipsum malesuada bibendum. Sed eu tellus
-            bibendum, sagittis orci non, rhoncus nulla.
-          </p>
-          <div />
-          <p style={{ opacity: `${this.state.webdevOpacity}` }}>
-            Sed dignissim finibus vestibulum. Interdum et malesuada fames ac
-            ante ipsum primis in faucibus. Duis ultrices felis nisl. Ut in mi
-            ultricies, placerat ipsum ut, imperdiet ligula. Nullam bibendum et
-            tellus ut sollicitudin. Morbi sit amet elit mollis, mollis leo
-            ullamcorper, tempus magna. Curabitur at magna auctor, ultricies nisl
-            in, suscipit ipsum.
-          </p>
         </div>
       </div>
     );
