@@ -1,24 +1,96 @@
 import React, { Component } from "react";
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      musicianOpacity: 0,
+      philosopherOpacity: 0,
+      webdevOpacity: 0
+    };
+  }
+
+  handleMusicianMouseEnter = () => {
+    this.setState({
+      musicianOpacity: 1
+    });
+  };
+  handlePhilosopherMouseEnter = () => {
+    this.setState({
+      philosopherOpacity: 1
+    });
+  };
+  handleWebdevMouseEnter = () => {
+    this.setState({
+      webdevOpacity: 1
+    });
+  };
+  handleMusicianMouseLeave = () => {
+    this.setState({
+      musicianOpacity: 0
+    });
+  };
+  handlePhilosopherMouseLeave = () => {
+    this.setState({
+      philosopherOpacity: 0
+    });
+  };
+  handleWebdevMouseLeave = () => {
+    this.setState({
+      webdevOpacity: 0
+    });
+  };
+
   render() {
     return (
       <div id="about-container">
         <h1 id="about-header">A little about my journey...</h1>
         <div id="about-grid">
-          <span className="ion-music-note about-icons" />
+          <div>
+            <button
+              className="ion-music-note about-icons"
+              name="musician"
+              onMouseEnter={this.handleMusicianMouseEnter}
+              onMouseLeave={this.handleMusicianMouseLeave}
+            />
+          </div>
           <div className="ion-arrow-right-c about-arrows" />
-          <span className="ion-university about-icons" />
+          <div>
+            <button
+              className="ion-university about-icons"
+              name="philosopher"
+              onMouseEnter={this.handlePhilosopherMouseEnter}
+              onMouseLeave={this.handlePhilosopherMouseLeave}
+            />
+          </div>
           <div className="ion-arrow-right-c about-arrows" />
-          <span className="ion-code about-icons" />
+          <div>
+            <button
+              className="ion-code about-icons"
+              name="web-dev"
+              onMouseEnter={this.handleWebdevMouseEnter}
+              onMouseLeave={this.handleWebdevMouseLeave}
+            />
+          </div>
 
-          <h1>Musician</h1>
-          <div />
-          <h1>Philosopher</h1>
-          <div />
-          <h1>Web Developer</h1>
+          <div style={{ opacity: `${this.state.musicianOpacity}` }}>
+            <h1>Musician</h1>
+            <h1>2013-2016</h1>
+          </div>
 
-          <p>
+          <div />
+          <div style={{ opacity: `${this.state.philosopherOpacity}` }}>
+            <h1>Philosopher</h1>
+            <h1>2015-2019</h1>
+          </div>
+
+          <div />
+          <div style={{ opacity: `${this.state.webdevOpacity}` }}>
+            <h1>Web Developer</h1>
+            <h1>2017-2019</h1>
+          </div>
+
+          <p style={{ opacity: `${this.state.musicianOpacity}` }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis
             neque sed dui tincidunt scelerisque eu et ante. Phasellus ac dui
             rutrum, faucibus purus at, iaculis dolor. Nam aliquet est eu felis
@@ -28,7 +100,7 @@ class About extends Component {
             ligula, nec interdum felis.{" "}
           </p>
           <div />
-          <p>
+          <p style={{ opacity: `${this.state.philosopherOpacity}` }}>
             Nulla feugiat elit ut libero fermentum, sed tristique metus feugiat.
             Nam imperdiet lectus orci, eget luctus nibh ullamcorper nec. Proin
             non orci blandit, dapibus libero ut, imperdiet est. Suspendisse et
@@ -37,7 +109,7 @@ class About extends Component {
             bibendum, sagittis orci non, rhoncus nulla.
           </p>
           <div />
-          <p>
+          <p style={{ opacity: `${this.state.webdevOpacity}` }}>
             Sed dignissim finibus vestibulum. Interdum et malesuada fames ac
             ante ipsum primis in faucibus. Duis ultrices felis nisl. Ut in mi
             ultricies, placerat ipsum ut, imperdiet ligula. Nullam bibendum et
