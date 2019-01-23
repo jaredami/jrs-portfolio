@@ -4,9 +4,9 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      musicianOpacity: 0,
-      philosopherOpacity: 0,
-      webdevOpacity: 0
+      musicianOpacity: 1,
+      philosopherOpacity: 1,
+      webdevOpacity: 1
     };
   }
 
@@ -27,17 +27,17 @@ class About extends Component {
   };
   handleMusicianMouseLeave = () => {
     this.setState({
-      musicianOpacity: 0
+      musicianOpacity: 1
     });
   };
   handlePhilosopherMouseLeave = () => {
     this.setState({
-      philosopherOpacity: 0
+      philosopherOpacity: 1
     });
   };
   handleWebdevMouseLeave = () => {
     this.setState({
-      webdevOpacity: 0
+      webdevOpacity: 1
     });
   };
 
@@ -46,71 +46,89 @@ class About extends Component {
       <div id="about-container">
         <h1 id="about-header">A little about my journey...</h1>
         <div id="about-grid">
-          <div>
-            <button
-              className="ion-music-note about-icons"
-              name="musician"
-              onMouseEnter={this.handleMusicianMouseEnter}
-              onMouseLeave={this.handleMusicianMouseLeave}
-            />
-            <div
-              className="about-text"
-              style={{ opacity: `${this.state.musicianOpacity}` }}
-            >
-              <h1>Musician</h1>
-              <p>
-                I played lead guitar for Forevermore for many years. We signed a
-                record deal with Solid State Records, released four full length
-                albums, and toured across the country numerous times between
-                2011 and 2016. Our last album charted at #8 on the HeatSeekers
-                charts, #15 on the Hard Music charts, and #121 on the top 200
-                Billboard charts.
-              </p>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <button
+                  className="ion-music-note about-icons"
+                  name="musician"
+                  onMouseEnter={this.handleMusicianMouseEnter}
+                  onMouseLeave={this.handleMusicianMouseLeave}
+                />
+              </div>
+              <div className="flip-card-back">
+                <div
+                  className="about-text"
+                  style={{ opacity: `${this.state.musicianOpacity}` }}
+                >
+                  <h1>Musician</h1>
+                  <p>
+                    I played lead guitar for Forevermore. We signed a record
+                    deal with Solid State Records, released four full length
+                    albums, and toured across the country numerous times between
+                    2011 and 2016.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="ion-arrow-right-c about-arrows" />
-          <div>
-            <button
-              className="ion-university about-icons"
-              name="philosopher"
-              onMouseEnter={this.handlePhilosopherMouseEnter}
-              onMouseLeave={this.handlePhilosopherMouseLeave}
-            />
-            <div
-              className="about-text"
-              style={{ opacity: `${this.state.philosopherOpacity}` }}
-            >
-              <h1>Philosopher</h1>
-              <p>
-                After calling it quits with the band, I returned to school to
-                study philosophy, a subject for which I had developed a deep
-                passion and interest. I completed my B.A. in December of 2017
-                and expect to receive my M.A. in May of 2019. My primary
-                fascinations concern question regarding consciousness and
-                perception.
-              </p>
+
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <button
+                  className="ion-university about-icons"
+                  name="philosopher"
+                  onMouseEnter={this.handlePhilosopherMouseEnter}
+                  onMouseLeave={this.handlePhilosopherMouseLeave}
+                />
+              </div>
+              <div className="flip-card-back">
+                <div
+                  className="about-text"
+                  style={{ opacity: `${this.state.philosopherOpacity}` }}
+                >
+                  <h1>Philosopher</h1>
+                  <p>
+                    After calling it quits with the band, I returned to school
+                    to study philosophy, having developing a deep fascination in
+                    questions about the nature of consciousness and sense
+                    perception. I will complete my M.A. in May of 2019.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="ion-arrow-right-c about-arrows" />
-          <div>
-            <button
-              className="ion-code about-icons"
-              name="web-dev"
-              onMouseEnter={this.handleWebdevMouseEnter}
-              onMouseLeave={this.handleWebdevMouseLeave}
-            />
-            <div
-              className="about-text"
-              style={{ opacity: `${this.state.webdevOpacity}` }}
-            >
-              <h1>Web Developer</h1>
-              <p>
-                I picked up programming during the final semester of my B.A. and
-                quickly fell in love with creating things with code. I have
-                found that web development offers much of what I love about both
-                music and philosophy as it enables me to express both my
-                creative and analytic capacities.
-              </p>
+
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <button
+                  className="ion-code about-icons"
+                  name="web-dev"
+                  onMouseEnter={this.handleWebdevMouseEnter}
+                  onMouseLeave={this.handleWebdevMouseLeave}
+                />
+              </div>
+              <div className="flip-card-back">
+                <div
+                  className="about-text"
+                  style={{ opacity: `${this.state.webdevOpacity}` }}
+                >
+                  <h1>Web Developer</h1>
+                  <p>
+                    I picked up programming during the final semester of my B.A.
+                    and quickly fell in love with creating things with code. I
+                    have found that web development offers much of what I love
+                    about both music and philosophy as it enables me to express
+                    both my creative and analytic capacities.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
