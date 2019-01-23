@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 import About from "./components/About";
+import Work from "./components/Work";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* <img
+          id="jumbo-img"
+          src={require(`./images/jrsrichmond.jpg`)}
+          alt="jared storm"
+        /> */}
+        <div id="jumbo-img" />
         <div id="jumbotron">
           <div className="nav-wrapper">
             <ul id="nav-list">
@@ -25,6 +32,7 @@ class App extends Component {
           />
         </div>
         <About />
+        <Work />
       </div>
     );
   }

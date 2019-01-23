@@ -5,15 +5,26 @@
 
 body {
   /* font-family: "Oswald", sans-serif; */
-  font-family: "Linden Hill", serif;
+  /* font-family: "Linden Hill", serif; */
+  font-family: "Cutive Mono", monospace;
   color: #070707;
 }
 
 /* Jumbotron */
+#jumbo-img {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  /* margin-top: -200px; */
+  z-index: -10;
+  background-color: black;
+  background: url(images/jrsrichmond.jpg) no-repeat center;
+}
+
 #jumbotron {
   width: 100vw;
   height: 100vh;
-  background: url(images/jrsrichmond.jpg) no-repeat center;
+  /* background: url(images/jrsrichmond.jpg) no-repeat center; */
 }
 
 .nav-wrapper {
@@ -49,7 +60,7 @@ body {
 }
 
 #greeting {
-  transform: translateY(55vh);
+  transform: translateY(55vmin);
   padding: 10px 0px;
   text-align: center;
   font-size: 10vh;
@@ -61,7 +72,7 @@ body {
 }
 
 .dark-wrapper {
-  transform: translateY(55vh);
+  transform: translateY(55vmin);
   padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 4px solid #f5f5f5;
@@ -85,7 +96,7 @@ body {
 
 #down-arrow {
   width: 50px;
-  transform: translateY(60vh);
+  transform: translateY(60vmin);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -100,10 +111,10 @@ body {
 
 /* About */
 #about-container {
-  line-height: 1.4;
+  /* line-height: 1.4; */
   padding-top: 5vh;
   padding-bottom: 5vh;
-  /* height: 100vh; */
+  height: 100vh;
   min-height: 760px;
   /* background-color: #232323; */
   background-color: #111111;
@@ -130,8 +141,7 @@ body {
 .about-icons {
   font-size: 15vmin;
   /* color: #133810; */
-  /* color: #9ab3c9; */
-  color: #212426;
+  color: #9ab3c9;
   background: none;
   border: none;
   padding: 0px;
@@ -142,9 +152,9 @@ body {
 
 .about-icons:hover {
   /* animation: pulsate-bck 0.5s ease-in-out both; */
-  transform: scale(1.2);
-  /* filter: brightness(130%); */
-  color: #9ab3c9;
+  /* transform: scale(1.2); */
+  filter: brightness(130%);
+  animation: text-shadow-pop-bottom 0.3s both;
 }
 
 .about-arrows {
@@ -156,8 +166,9 @@ body {
 }
 
 .about-text {
-  /* background-color: #111111; */
-  /* border-radius: 10px;
+  color: #9ab3c9;
+  /* background-color: #9ab3c9;
+  border-radius: 10px;
   box-shadow: 2px 5px 10px #0a0a0a; */
   padding: 20px;
 }
@@ -166,15 +177,23 @@ body {
   font-size: 4vmin;
   letter-spacing: 1.2px;
   font-weight: 400;
-  color: #9ab3c9;
+  margin-bottom: 4vh;
+  /* color: #9ab3c9; */
   /* filter: brightness(130%); */
+  text-shadow: 0px 2px 5px black;
   transition: all 300ms ease;
 }
 
 #about-grid p {
   font-size: 2.5vmin;
-  letter-spacing: 1.2px;
+  text-shadow: 0px 2px 5px black;
   transition: all 300ms ease;
+}
+
+/* Work */
+#work-container {
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
 /* Responsive */
@@ -312,5 +331,18 @@ body {
   }
   100% {
     transform: scale(1) rotate3d(1, 1, 0, -360deg);
+  }
+}
+
+@keyframes text-shadow-pop-bottom {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555,
+      0 0 #555555, 0 0 #555555, 0 0 #555555;
+    transform: translateY(0);
+  }
+  100% {
+    text-shadow: 0 1px #000000, 0 2px #000000, 0 3px #000000, 0 4px #000000,
+      0 5px #000000, 0 6px #000000, 0 7px #000000, 0 8px #000000;
+    transform: translateY(-8px);
   }
 }

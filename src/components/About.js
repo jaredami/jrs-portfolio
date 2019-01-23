@@ -4,9 +4,9 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      musicianOpacity: 0.1,
-      philosopherOpacity: 0.1,
-      webdevOpacity: 0.1
+      musicianOpacity: 0,
+      philosopherOpacity: 0,
+      webdevOpacity: 0
     };
   }
 
@@ -27,17 +27,17 @@ class About extends Component {
   };
   handleMusicianMouseLeave = () => {
     this.setState({
-      musicianOpacity: 0.1
+      musicianOpacity: 0
     });
   };
   handlePhilosopherMouseLeave = () => {
     this.setState({
-      philosopherOpacity: 0.1
+      philosopherOpacity: 0
     });
   };
   handleWebdevMouseLeave = () => {
     this.setState({
-      webdevOpacity: 0.1
+      webdevOpacity: 0
     });
   };
 
@@ -62,7 +62,7 @@ class About extends Component {
                 I played lead guitar for Forevermore for many years. We signed a
                 record deal with Solid State Records, released four full length
                 albums, and toured across the country numerous times between
-                2011 and 2016. Out last album charted at #8 on the HeatSeekers
+                2011 and 2016. Our last album charted at #8 on the HeatSeekers
                 charts, #15 on the Hard Music charts, and #121 on the top 200
                 Billboard charts.
               </p>
