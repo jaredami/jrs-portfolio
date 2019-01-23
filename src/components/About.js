@@ -50,7 +50,7 @@ class About extends Component {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <button
-                  className="ion-music-note about-icons"
+                  className="ion-music-note about-icon"
                   name="musician"
                   onMouseEnter={this.handleMusicianMouseEnter}
                   onMouseLeave={this.handleMusicianMouseLeave}
@@ -61,7 +61,10 @@ class About extends Component {
                   className="about-text"
                   style={{ opacity: `${this.state.musicianOpacity}` }}
                 >
-                  <h1>Musician</h1>
+                  <h1>
+                    <span className="ion-music-note about-icon-sm" />
+                    Musician
+                  </h1>
                   <p>
                     I played lead guitar for Forevermore. We signed a record
                     deal with Solid State Records, released four full length
@@ -79,7 +82,7 @@ class About extends Component {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <button
-                  className="ion-university about-icons"
+                  className="ion-university about-icon"
                   name="philosopher"
                   onMouseEnter={this.handlePhilosopherMouseEnter}
                   onMouseLeave={this.handlePhilosopherMouseLeave}
@@ -90,7 +93,10 @@ class About extends Component {
                   className="about-text"
                   style={{ opacity: `${this.state.philosopherOpacity}` }}
                 >
-                  <h1>Philosopher</h1>
+                  <h1>
+                    <span className="ion-university about-icon-sm" />
+                    Philosopher
+                  </h1>
                   <p>
                     After calling it quits with the band, I returned to school
                     to study philosophy, having developing a deep fascination in
@@ -108,7 +114,7 @@ class About extends Component {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <button
-                  className="ion-code about-icons"
+                  className="ion-code about-icon"
                   name="web-dev"
                   onMouseEnter={this.handleWebdevMouseEnter}
                   onMouseLeave={this.handleWebdevMouseLeave}
@@ -119,13 +125,16 @@ class About extends Component {
                   className="about-text"
                   style={{ opacity: `${this.state.webdevOpacity}` }}
                 >
-                  <h1>Web Developer</h1>
+                  <h1>
+                    <span className="ion-code about-icon-sm" />
+                    Web Developer
+                  </h1>
                   <p>
                     I picked up programming during the final semester of my B.A.
                     and quickly fell in love with creating things with code. I
                     have found that web development offers much of what I love
-                    about both music and philosophy as it enables me to express
-                    both my creative and analytic capacities.
+                    about both music and philosophy: being creative and
+                    analytic.
                   </p>
                 </div>
               </div>
