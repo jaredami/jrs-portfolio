@@ -131,10 +131,10 @@ class About extends Component {
                   </h1>
                   <p>
                     I picked up programming during the final semester of my B.A.
-                    and quickly fell in love with creating things with code. I
-                    have found that web development offers much of what I love
-                    about both music and philosophy: being creative and
-                    analytic.
+                    (2017) and quickly fell in love with creating things with
+                    code. I have found that web development offers much of what
+                    I love most about both music and philosophy: being creative
+                    and analytic.
                   </p>
                 </div>
               </div>

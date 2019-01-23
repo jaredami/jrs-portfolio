@@ -168,6 +168,7 @@ body {
   margin-bottom: 5vh;
   font-size: 5vmin;
   font-weight: 400;
+  animation: float 3s ease-in-out infinite;
 }
 
 #about-grid {
@@ -188,6 +189,7 @@ body {
   background-color: transparent;
   perspective: 1000px;
   transition: all 300ms;
+  /* animation: float 3s ease-in-out infinite; */
 }
 
 .flip-card-inner {
@@ -245,6 +247,7 @@ body {
   color: var(--color-1);
   /* color: #4a7331; */
   /* color: var(--color-4); */
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background: none;
   border: none;
   cursor: pointer;
@@ -268,6 +271,7 @@ body {
   place-self: center;
   margin-top: 4vh;
   font-size: 7vmin;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
   /* color: var(--color-4-very-light); */
   /* color: #9ab3c9; */
   /* color: #133810; */
@@ -297,13 +301,13 @@ body {
   /* color: #ffb88c; */
   /* color: #9ab3c9; */
   /* filter: brightness(130%); */
-  /* text-shadow: 0px 2px 5px black; */
+  text-shadow: 0px 2px 5px black;
   transition: all 300ms ease;
 }
 
 #about-grid p {
-  font-size: 2vh;
-  /* text-shadow: 0px 2px 5px black; */
+  font-size: 2.5vmin;
+  text-shadow: 0px 2px 5px black;
   color: #eeeeee;
   transition: all 300ms ease;
 }
@@ -484,5 +488,20 @@ body {
     text-shadow: 0 1px #000000, 0 2px #000000, 0 3px #000000, 0 4px #000000,
       0 5px #000000, 0 6px #000000, 0 7px #000000, 0 8px #000000;
     transform: translateY(-8px);
+  }
+}
+
+@keyframes float {
+  0% {
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    text-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
   }
 }
