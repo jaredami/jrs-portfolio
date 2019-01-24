@@ -45,6 +45,7 @@ body {
   font-family: "Oswald", sans-serif;
   /* font-family: "Linden Hill", serif; */
   /* font-family: "Cutive Mono", monospace; */
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 /* Jumbotron */
@@ -80,6 +81,7 @@ body {
   height: 5vw;
   text-shadow: 0px 2px 10px black;
   box-shadow: 0px 2px 10px black;
+  transition: all ease 1s;
 }
 
 #storm-icon:focus {
@@ -132,16 +134,26 @@ body {
   transform: translateY(55vh);
   padding: 10px 0px;
   text-align: center;
-  /* font-family: "Brush Script MT", cursive; */
-  /* font-size: 10vh;
-  font-family: "Lobster", cursive; */
-  font-family: "Oleo Script", cursive;
+
   font-size: 8vh;
   font-family: "Pacifico", cursive;
   color: var(--white-1);
   text-shadow: 0px 0px 20px black;
   animation: fadein 3s;
+  /* font-family: "Brush Script MT", cursive; */
+  /* font-size: 10vh;
+  font-family: "Lobster", cursive; */
+  font-family: "Oleo Script", cursive;
+  font-family: "Leckerli One", cursive;
+  font-family: "Molle", cursive;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Cherry Swash", cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "Righteous", cursive;
+  font-family: "Croissant One", cursive;
+  font-family: "Berkshire Swash", cursive;
 }
+
 .dark-wrapper {
   transform: translateY(55vh);
   padding: 10px 0;
@@ -151,6 +163,7 @@ body {
   text-align: center;
   /* animation: color-change-3x 5s linear infinite alternate both; */
 }
+
 #info {
   /* font-family: "Cutive Mono", monospace; */
   font-size: 4vh;
@@ -163,6 +176,7 @@ body {
   animation: scale-in-ver-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s
     both;
 }
+
 #down-arrow-link {
   /* transform: translateY(40vmin); */
   display: block;
@@ -175,10 +189,12 @@ body {
   text-decoration: none;
   animation: bounce 1s infinite ease-out;
 }
+
 #down-arrow-link:hover {
   cursor: pointer;
   transition: 300ms all ease;
 }
+
 /* About */
 #about-container {
   padding-top: 20vh;
@@ -198,6 +214,7 @@ body {
   /* color: var(--white-1);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.45); */
 }
+
 #about-header {
   margin-bottom: 5vh;
   text-align: center;
@@ -205,6 +222,7 @@ body {
   font-weight: 400;
   animation: float 3s ease-in-out infinite;
 }
+
 #about-grid {
   display: grid;
   grid-template-columns: 8fr 2fr 8fr 2fr 8fr;
@@ -214,6 +232,7 @@ body {
   margin: 0 auto;
   /* grid-row-gap: 20px; */
 }
+
 .flip-card {
   height: 40vmin;
   width: 40vmin;
@@ -225,6 +244,7 @@ body {
   cursor: pointer;
   /* animation: float 3s ease-in-out infinite; */
 }
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -237,9 +257,11 @@ body {
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
   /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
 }
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -255,32 +277,18 @@ body {
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
   /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
 }
+
 .flip-card-front {
   z-index: 2; /* background-color: var(--white-1); */
-  background-color: white;
+  /* background-color: white; */
   /* background-image: url("./images/tampa.jpg"); */
   /* background-image: url("./images/leaf-texture-3.jpg"); */
   /* background-repeat: no-repeat;
   background-size: cover; */
-  background: linear-gradient(
-    45deg,
-    var(--color-1-very-light) 50%,
-    var(--color-2-very-light) 50%
-  );
+  background: linear-gradient(30deg, var(--color-2) 10%, var(--color-1) 90%);
+  animation: color-change-3x 3s linear infinite alternate both;
 }
-.flip-card-back {
-  transform: rotateY(180deg);
-  z-index: 1;
-  /* background-color: var(--black-1); */
-  /* background-color: var(--color-1-very-light); */
-  background: linear-gradient(
-    45deg,
-    var(--color-1-very-light) 20%,
-    var(--color-2-very-light) 80%
-  );
-  /* box-shadow: 20px 20px 110px rgba(0, 0, 0, 0.45) inset; */
-  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45) inset; */
-}
+
 .about-icon {
   display: block;
   margin: 0 auto;
@@ -301,9 +309,25 @@ body {
   outline: inherit;
   transition: all 300ms;
 }
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  /* background-color: var(--black-1); */
+  /* background-color: var(--color-1-very-light); */
+  background: linear-gradient(
+    45deg,
+    var(--color-1-very-light) 20%,
+    var(--color-2-very-light) 80%
+  );
+  /* box-shadow: 20px 20px 110px rgba(0, 0, 0, 0.45) inset; */
+  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45) inset; */
+}
+
 .about-icon-sm {
   padding-right: 7px; /* color: var(--blue); */
 }
+
 .about-arrow {
   place-self: center;
   margin-top: 4vh;
@@ -313,6 +337,7 @@ body {
   /* color: var(--blue); */
   /* color: #133810; */
 }
+
 .about-text {
   /* color: var(--white-1); */ /* color: var(--blue); */
   /* background-color: var(--blue);
@@ -324,6 +349,7 @@ body {
   text-shadow: 0px 1px 7px black;
   color: var(--white-1);
 }
+
 #about-grid h1 {
   margin-bottom: 1vh; /* font-family: "Brush Script MT", cursive; */
   /* font-family: "Lobster", cursive; */
@@ -336,20 +362,42 @@ body {
   /* color: var(--blue); */
   /* filter: brightness(130%); */
   transition: all 300ms ease;
+  font-family: "Oleo Script", cursive;
+  font-family: "Leckerli One", cursive;
+  font-family: "Molle", cursive;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Cherry Swash", cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "Righteous", cursive;
+  font-family: "Croissant One", cursive;
+  font-family: "Berkshire Swash", cursive;
 }
+
 #about-grid p {
   font-size: 2.5vmin;
   color: var(--white-2);
   transition: all 300ms ease;
 }
+
 /* Work */
 #work-container {
   height: 100vh;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
   background: linear-gradient(
     45deg,
     var(--color-1-very-light) 10%,
     var(--color-2-very-light) 90%
   );
+  color: var(--white-1);
+}
+
+#work-header {
+  margin-bottom: 5vh;
+  text-align: center;
+  font-size: 5vmin;
+  font-weight: 400;
+  animation: float 3s ease-in-out infinite;
 }
 /* Responsive */
 @media screen and (max-width: 1380px) {
@@ -388,6 +436,7 @@ body {
     width: 80vw;
   }
 }
+
 /* Animations */
 @keyframes text-focus-in {
   0% {
@@ -434,29 +483,22 @@ body {
     transform: translateY(60vh);
   }
 }
-/* @keyframes color-change-3x {
-  0% {
-    background: rgba(154, 179, 201, 0.5);
-  }
-  50% {
-    background: rgba(39, 69, 33, 0.5);
-  }
-  100% {
-    background: rgba(174, 157, 131, 0.5);
-  }
-} */
+
 @keyframes color-change-3x {
   0% {
     background: rgba(20, 56, 16, 0.5);
+    background: var(--color-1-very-light);
   }
   50% {
     background: rgba(12, 42, 40, 0.5);
+    background: var(--color-2-very-light);
   }
   100% {
-    /* background: #ae9d83; */
     background: rgba(68, 41, 20, 0.5);
+    background: var(--color-3-very-light);
   }
 }
+
 @keyframes text-shadow-drop-center {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -465,6 +507,7 @@ body {
     text-shadow: 0px 0px 20px black;
   }
 }
+
 @keyframes scale-in-ver-bottom {
   0% {
     transform: scaleY(0);
@@ -477,6 +520,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes pulsate-bck {
   0% {
     transform: scale(1);
@@ -488,6 +532,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes rotate-scale-up-diag-1 {
   0% {
     transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -499,6 +544,7 @@ body {
     transform: scale(1) rotate3d(1, 1, 0, -360deg);
   }
 }
+
 @keyframes text-shadow-pop-bottom {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555,
@@ -511,6 +557,7 @@ body {
     transform: translateY(-8px);
   }
 }
+
 @keyframes float {
   0% {
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -525,6 +572,7 @@ body {
     transform: translatey(0px);
   }
 }
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0);

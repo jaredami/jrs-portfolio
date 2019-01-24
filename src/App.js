@@ -4,13 +4,53 @@ import About from "./components/About";
 import Work from "./components/Work";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollAmount: 0,
+      scrollToTopButtonOpacity: 0
+    };
+  }
+  componentDidMount() {
+    // listen for window resize, call function to handle any changes
+    window.addEventListener("scroll", this.updateScrollAmount);
+    this.updateScrollAmount();
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.updateScrollAmount);
+  }
+
+  // sets the state of width and height to match window dimensions, then calls function which changes display accordingly
+  updateScrollAmount = () => {
+    this.setState({ scrollAmount: window.scrollY });
+    console.log("scrollY: " + this.state.scrollAmount);
+    this.handleUpdatedScrollAmount();
+  };
+
+  handleUpdatedScrollAmount = () => {
+    if (this.state.scrollAmount > 100) {
+      this.setState({
+        scrollToTopButtonOpacity: 1
+      });
+      console.log("visible");
+    } else {
+      this.setState({
+        scrollToTopButtonOpacity: 0
+      });
+    }
+  };
+
   render() {
     return (
       <div className="App">
         <div id="jumbo-img" />
         <div id="jumbotron">
           <a href="#jumbotron">
-            <button className="ion-flash" id="storm-icon" />
+            <button
+              className="ion-flash"
+              id="storm-icon"
+              style={{ opacity: this.state.scrollToTopButtonOpacity }}
+            />
           </a>
           <div className="nav-wrapper">
             <ul id="nav-list">
@@ -25,7 +65,7 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <h1 id="greeting">Hi, I'm Jared Storm.</h1>
+          <h1 id="greeting">Hi, I'm Jared.</h1>
           <div className="dark-wrapper">
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
@@ -35,7 +75,7 @@ class App extends Component {
               src={require(`./images/down-arrow.png`)}
               alt="down arrow"
             /> */}
-            <p id="down-arrow" class="ion-chevron-down" />
+            <p id="down-arrow" className="ion-chevron-down" />
           </a>
         </div>
         <About />
