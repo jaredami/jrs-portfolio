@@ -1,46 +1,6 @@
 import React, { Component } from "react";
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      musicianOpacity: 1,
-      philosopherOpacity: 1,
-      webdevOpacity: 1
-    };
-  }
-
-  handleMusicianMouseEnter = () => {
-    this.setState({
-      musicianOpacity: 1
-    });
-  };
-  handlePhilosopherMouseEnter = () => {
-    this.setState({
-      philosopherOpacity: 1
-    });
-  };
-  handleWebdevMouseEnter = () => {
-    this.setState({
-      webdevOpacity: 1
-    });
-  };
-  handleMusicianMouseLeave = () => {
-    this.setState({
-      musicianOpacity: 1
-    });
-  };
-  handlePhilosopherMouseLeave = () => {
-    this.setState({
-      philosopherOpacity: 1
-    });
-  };
-  handleWebdevMouseLeave = () => {
-    this.setState({
-      webdevOpacity: 1
-    });
-  };
-
   render() {
     return (
       <div id="about-container">
@@ -49,18 +9,10 @@ class About extends Component {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <button
-                  className="ion-music-note about-icon"
-                  name="musician"
-                  onMouseEnter={this.handleMusicianMouseEnter}
-                  onMouseLeave={this.handleMusicianMouseLeave}
-                />
+                <span className="ion-music-note about-icon" name="musician" />
               </div>
               <div className="flip-card-back">
-                <div
-                  className="about-text"
-                  style={{ opacity: `${this.state.musicianOpacity}` }}
-                >
+                <div className="about-text">
                   <h1>
                     <span className="ion-music-note about-icon-sm" />
                     Musician
@@ -81,18 +33,10 @@ class About extends Component {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <button
-                  className="ion-university about-icon"
-                  name="philosopher"
-                  onMouseEnter={this.handlePhilosopherMouseEnter}
-                  onMouseLeave={this.handlePhilosopherMouseLeave}
-                />
+                <span className="ion-university about-icon" />
               </div>
               <div className="flip-card-back">
-                <div
-                  className="about-text"
-                  style={{ opacity: `${this.state.philosopherOpacity}` }}
-                >
+                <div className="about-text">
                   <h1>
                     <span className="ion-university about-icon-sm" />
                     Philosopher
@@ -113,18 +57,10 @@ class About extends Component {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <button
-                  className="ion-code about-icon"
-                  name="web-dev"
-                  onMouseEnter={this.handleWebdevMouseEnter}
-                  onMouseLeave={this.handleWebdevMouseLeave}
-                />
+                <span className="ion-code about-icon" />
               </div>
               <div className="flip-card-back">
-                <div
-                  className="about-text"
-                  style={{ opacity: `${this.state.webdevOpacity}` }}
-                >
+                <div className="about-text">
                   <h1>
                     <span className="ion-code about-icon-sm" />
                     Web Developer

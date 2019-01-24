@@ -16,20 +16,28 @@ class App extends Component {
         <div id="jumbotron">
           <div className="nav-wrapper">
             <ul id="nav-list">
-              <li>About</li>
-              <li>Work</li>
-              <li>Contact</li>
+              <li>
+                <a href="#about-container">About</a>
+              </li>
+              <li>
+                <a href="#work-container">Work</a>
+              </li>
+              <li>
+                <a href="#about-container">Contact</a>
+              </li>
             </ul>
           </div>
           <h1 id="greeting">Hi, I'm Jared.</h1>
           <div className="dark-wrapper">
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
-          <img
-            id="down-arrow"
-            src={require(`./images/down-arrow.png`)}
-            alt="down arrow"
-          />
+          <a href="#about-container">
+            <img
+              id="down-arrow"
+              src={require(`./images/down-arrow.png`)}
+              alt="down arrow"
+            />
+          </a>
         </div>
         <About />
         <Work />
