@@ -66,10 +66,10 @@ class About extends Component {
                     Musician
                   </h1>
                   <p>
-                    I played lead guitar for Forevermore. We signed a record
-                    deal with Solid State Records, released four full length
-                    albums, and toured across the country numerous times between
-                    2011 and 2016.
+                    I played lead guitar for Forevermore from 2009 to 2016. We
+                    signed a record deal with Solid State Records, released four
+                    full length albums, and toured across the country numerous
+                    times.
                   </p>
                 </div>
               </div>
@@ -99,9 +99,9 @@ class About extends Component {
                   </h1>
                   <p>
                     After calling it quits with the band, I returned to school
-                    to study philosophy, having developing a deep fascination in
-                    questions about the nature of consciousness and sense
-                    perception. I will complete my M.A. in May of 2019.
+                    to pursue a Master's degree in Philosophy, having developing
+                    a deep fascination in questions regarding the nature of
+                    consciousness and perception.
                   </p>
                 </div>
               </div>
@@ -130,11 +130,10 @@ class About extends Component {
                     Web Developer
                   </h1>
                   <p>
-                    I picked up programming during the final semester of my B.A.
-                    (2017) and quickly fell in love with creating things with
-                    code. I have found that web development offers much of what
-                    I love most about both music and philosophy: being creative
-                    and analytic.
+                    I picked up programming in 2017 and quickly fell in love
+                    with making things with code. I have found that web
+                    development allows me to continue to be both creative and
+                    analytic.
                   </p>
                 </div>
               </div>
