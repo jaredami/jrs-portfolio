@@ -47,7 +47,7 @@ class App extends Component {
         <div id="jumbotron">
           <a href="#jumbotron">
             <button
-              className="ion-flash"
+              className="ion-leaf"
               id="storm-icon"
               style={{ opacity: this.state.scrollToTopButtonOpacity }}
             />

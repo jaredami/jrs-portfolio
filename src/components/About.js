@@ -4,14 +4,29 @@ class About extends Component {
   render() {
     return (
       <div id="about-container">
+        <img
+          id="branch"
+          src={require(`../images/leaves-2-bw.png`)}
+          alt="branch"
+        />
         <h1 id="about-header">A little about my journey...</h1>
         <div id="about-grid">
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaves-bw.png`)}
+                  alt="leaves"
+                />
                 <span className="ion-music-note about-icon" name="musician" />
               </div>
               <div className="flip-card-back">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaf-bw.jpg`)}
+                  alt="leaf"
+                />
                 <div className="about-text">
                   <h1>
                     <span className="ion-music-note about-icon-sm" />
@@ -33,9 +48,19 @@ class About extends Component {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaves-bw.png`)}
+                  alt="leaves"
+                />
                 <span className="ion-university about-icon" />
               </div>
               <div className="flip-card-back">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaf-bw.jpg`)}
+                  alt="leaf"
+                />
                 <div className="about-text">
                   <h1>
                     <span className="ion-university about-icon-sm" />
@@ -57,9 +82,19 @@ class About extends Component {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaves-bw.png`)}
+                  alt="leaves"
+                />
                 <span className="ion-code about-icon" />
               </div>
               <div className="flip-card-back">
+                <img
+                  className="leaf"
+                  src={require(`../images/leaf-bw.jpg`)}
+                  alt="leaf"
+                />
                 <div className="about-text">
                   <h1>
                     <span className="ion-code about-icon-sm" />
