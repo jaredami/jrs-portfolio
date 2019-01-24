@@ -7,13 +7,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <img
-          id="jumbo-img"
-          src={require(`./images/jrsrichmond.jpg`)}
-          alt="jared storm"
-        /> */}
         <div id="jumbo-img" />
         <div id="jumbotron">
+          <a href="#jumbotron">
+            <button className="ion-flash" id="storm-icon" />
+          </a>
           <div className="nav-wrapper">
             <ul id="nav-list">
               <li>
@@ -27,16 +25,17 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <h1 id="greeting">Hi, I'm Jared.</h1>
+          <h1 id="greeting">Hi, I'm Jared Storm.</h1>
           <div className="dark-wrapper">
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
-          <a href="#about-container">
-            <img
+          <a id="down-arrow-link" href="#about-container">
+            {/* <img
               id="down-arrow"
               src={require(`./images/down-arrow.png`)}
               alt="down arrow"
-            />
+            /> */}
+            <p id="down-arrow" class="ion-chevron-down" />
           </a>
         </div>
         <About />

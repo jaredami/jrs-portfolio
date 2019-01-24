@@ -28,7 +28,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-c about-arrows" />
+          <div className="ion-arrow-right-c about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
@@ -52,7 +52,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-c about-arrows" />
+          <div className="ion-arrow-right-c about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
