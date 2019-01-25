@@ -46,11 +46,24 @@ class App extends Component {
         <div id="jumbo-img" />
         <div id="jumbotron">
           <a href="#jumbotron">
-            <button
+            {/* <button
               className="ion-arrow-up-a"
               id="storm-icon"
               style={{ opacity: this.state.scrollToTopButtonOpacity }}
-            />
+            /> */}
+            <button
+              id="storm-icon"
+              style={{ opacity: this.state.scrollToTopButtonOpacity }}
+            >
+              <i class="icon ion-md-home" id="flash-icon" />
+            </button>
+
+            {/* <img
+              id="up-arrow"
+              src={require(`./images/arrow-up-a.svg`)}
+              alt="up arrow"
+              style={{ opacity: this.state.scrollToTopButtonOpacity }}
+            /> */}
           </a>
           <div className="nav-wrapper">
             <ul id="nav-list">

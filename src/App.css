@@ -66,6 +66,28 @@ body {
   height: 100vh;
 }
 
+/* #up-arrow {
+  position: fixed;
+  z-index: 20;
+  top: 40px;
+  left: 20px;
+  color: var(--white-1);
+  font-size: 3vw;
+  background: linear-gradient(
+    45deg,
+    var(--color-1-very-light) 50%,
+    var(--color-2-very-light) 50%
+  );
+  border: 0.5vw inset var(--white-1);
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  min-width: 50px;
+  min-height: 50px;
+  text-shadow: 0px 2px 10px black;
+  box-shadow: 0px 2px 10px black;
+  transition: all ease 1s;
+} */
 #storm-icon {
   position: fixed;
   z-index: 20;
@@ -87,6 +109,10 @@ body {
   text-shadow: 0px 2px 10px black;
   box-shadow: 0px 2px 10px black;
   transition: all ease 1s;
+}
+
+#flash-icon {
+  margin: auto;
 }
 
 #storm-icon:focus {
