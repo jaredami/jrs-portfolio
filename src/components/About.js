@@ -19,7 +19,8 @@ class About extends Component {
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
-                <span className="ion-music-note about-icon" name="musician" />
+                {/* <span className="ion-music-note about-icon" name="musician" /> */}
+                <i class="icon ion-md-musical-notes about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
@@ -29,7 +30,8 @@ class About extends Component {
                 />
                 <div className="about-text">
                   <h1>
-                    <span className="ion-music-note about-icon-sm" />
+                    {/* <span className="ion-music-note about-icon-sm" /> */}
+                    <i class="icon ion-md-musical-notes about-icon-sm" />
                     Musician
                   </h1>
                   <p>
@@ -53,7 +55,8 @@ class About extends Component {
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
-                <span className="ion-university about-icon" />
+                {/* <span className="ion-university about-icon" /> */}
+                <i class="icon ion-md-school about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
@@ -63,7 +66,8 @@ class About extends Component {
                 />
                 <div className="about-text">
                   <h1>
-                    <span className="ion-university about-icon-sm" />
+                    {/* <span className="ion-university about-icon-sm" /> */}
+                    <i class="icon ion-md-school about-icon-sm" />
                     Philosopher
                   </h1>
                   <p>
@@ -87,7 +91,8 @@ class About extends Component {
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
-                <span className="ion-code about-icon" />
+                {/* <span className="ion-code about-icon" /> */}
+                <i class="icon ion-md-code about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
@@ -97,7 +102,8 @@ class About extends Component {
                 />
                 <div className="about-text">
                   <h1>
-                    <span className="ion-code about-icon-sm" />
+                    {/* <span className="ion-code about-icon-sm" /> */}
+                    <i class="icon ion-md-code about-icon-sm" />
                     Web Developer
                   </h1>
                   <p>
