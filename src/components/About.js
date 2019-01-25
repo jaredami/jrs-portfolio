@@ -50,7 +50,8 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-a about-arrow" />
+          {/* <div className="ion-arrow-right-a about-arrow" /> */}
+          <i className="icon ion-md-arrow-dropright about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
@@ -86,7 +87,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-a about-arrow" />
+          <i className="icon ion-md-arrow-dropright about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
