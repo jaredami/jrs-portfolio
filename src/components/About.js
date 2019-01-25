@@ -43,7 +43,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-c about-arrow" />
+          <div className="ion-arrow-right-a about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
@@ -77,7 +77,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="ion-arrow-right-c about-arrow" />
+          <div className="ion-arrow-right-a about-arrow" />
 
           <div className="flip-card">
             <div className="flip-card-inner">
@@ -103,8 +103,8 @@ class About extends Component {
                   <p>
                     I picked up programming in 2017 and quickly fell in love
                     with making things with code. I have found that web
-                    development allows me to continue to be both creative and
-                    analytic.
+                    development allows me to continue to be both creative
+                    (music) and analytic (philosphy).
                   </p>
                 </div>
               </div>

@@ -25,9 +25,12 @@
 
   --white-1: #f5f5f5;
   --white-2: #eeeeee;
+  --gray-1: #bcbcbc;
+  --gray-2: #848484;
   --black-1: #333741;
   --black-2: #222222;
   --black-3: #232323;
+  --black-4: #191919;
   --blue: #9ab3c9;
   --blue-dark: #43688a;
 }
@@ -145,11 +148,11 @@ body {
   /* font-size: 10vh;
   font-family: "Lobster", cursive; */
   font-family: "Oleo Script", cursive;
-  font-family: "Leckerli One", cursive;
+  /* font-family: "Leckerli One", cursive;
   font-family: "Molle", cursive;
   font-family: "Abril Fatface", cursive;
   font-family: "Cherry Swash", cursive;
-  /* font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   font-family: "Righteous", cursive;
   font-family: "Croissant One", cursive;
   font-family: "Berkshire Swash", cursive; */
@@ -208,8 +211,9 @@ body {
   ); */
   /* background-color: var(--white-2); */
   /* background-color: var(--white-1); */
-  background-color: var(--black-3);
-  background-color: #191919;
+  /* background-color: var(--black-3); */
+  background-color: var(--black-4);
+  /* background-color: #191A1D; */
   /* background-color: var(--black-1); */
   /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23181818' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
   color: var(--white-1);
@@ -281,13 +285,13 @@ body {
   backface-visibility: hidden;
   /* border: 0.5vh inset var(--black-3); */
   border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); */
   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
   /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
   /* box-shadow: 1px 1px var(--black-3), 2px 2px var(--black-3),
     3px 3px var(--black-3), 4px 4px var(--black-3), 5px 5px var(--black-3),
     6px 6px var(--black-3); */
-  /* box-shadow: 0 40px 110px rgba(0, 0, 0, 0.45); */
+  box-shadow: 20px 50px 30px rgba(0, 0, 0, 0.45);
 }
 
 .flip-card-front {
@@ -316,9 +320,9 @@ body {
   /* font-size: 15vmin; */
   font-size: 20vmin;
   /* color: #409072; */
-  color: var(--color-1-very-light);
-  color: #bcbcbc;
-  color: #848484;
+  /* color: var(--color-1-very-light);
+  color: #bcbcbc; */
+  color: var(--gray-2);
   /* color: var(--white-2); */
   /* opacity: 0.7; */
   /* color: var(--black-3); */
@@ -357,6 +361,7 @@ body {
 .about-arrow {
   place-self: center;
   margin-top: 4vh;
+  color: var(--gray-1);
   font-size: 7vmin;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
   /* text-shadow: 1px 1px var(--black-3), 2px 2px var(--black-3),
@@ -393,10 +398,10 @@ body {
   /* filter: brightness(130%); */
   transition: all 300ms ease;
   font-family: "Oleo Script", cursive;
-  font-family: "Leckerli One", cursive;
+  /* font-family: "Leckerli One", cursive;
   font-family: "Molle", cursive;
   font-family: "Abril Fatface", cursive;
-  font-family: "Cherry Swash", cursive;
+  font-family: "Cherry Swash", cursive; */
   /* font-family: "Oleo Script Swash Caps", cursive;
   font-family: "Righteous", cursive;
   font-family: "Croissant One", cursive;
@@ -420,6 +425,10 @@ body {
     var(--color-2-very-light) 90%
   );
   color: var(--white-1);
+  background-color: var(--color-1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23bcbcbc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23232323' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b1b1b1' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23212121' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23a5a5a5' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%231f1f1f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%239a9a9a' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%231d1d1d' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%238f8f8f' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%231b1b1b' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23848484' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23191919' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #work-header {
@@ -428,6 +437,12 @@ body {
   font-size: 5vmin;
   font-weight: 400;
   animation: float 3s ease-in-out infinite;
+}
+
+.project-screenshot {
+  display: block;
+  width: 40vw;
+  margin: 100px auto;
 }
 
 /* Responsive */
