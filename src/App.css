@@ -115,23 +115,42 @@ body {
 }
 
 #nav-list li {
-  display: inline;
+  display: inline-block;
   margin: 0 3vw;
   padding: 0 10px;
   border-radius: 4px;
 }
 
 #nav-list a {
+  /* display: inline-block; */
   color: inherit;
   text-decoration: none;
   transition: all ease 300ms;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
+#nav-list a:after {
+  content: "";
+  /* position: absolute; */
+  display: block;
+  margin: auto;
+  height: 4px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+#nav-list a:hover:after {
+  width: 40px;
+  /* background: var(--blue); */
+  box-sizing: border-box;
+  border-bottom: 4px solid var(--blue);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
 #nav-list li a:hover {
   cursor: pointer;
-  color: var(--blue);
-  letter-spacing: 1.1px;
+  /* color: var(--blue); */
+  /* letter-spacing: 1.1px; */
   text-shadow: 2px 4px 5px black;
 }
 
@@ -416,8 +435,8 @@ body {
 
 /* Work */
 #work-container {
-  height: 100vh;
-  padding-top: 20vh;
+  min-height: 100vh;
+  padding-top: 10vh;
   padding-bottom: 30vh;
   background: linear-gradient(
     45deg,
@@ -439,10 +458,19 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-.project-screenshot {
+.project {
   display: block;
   width: 40vw;
   margin: 100px auto;
+}
+
+[className^="imghvr-"],
+[className*=" imghvr-"] {
+  background-color: #d14233;
+}
+
+figure {
+  background-color: #d14233;
 }
 
 /* Responsive */
