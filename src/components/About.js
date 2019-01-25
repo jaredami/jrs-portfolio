@@ -4,9 +4,14 @@ class About extends Component {
   render() {
     return (
       <div id="about-container">
-        <img
+        {/* <img
           id="branch"
           src={require(`../images/leaves-2-bw.png`)}
+          alt="branch"
+        /> */}
+        <img
+          id="branch"
+          src={require(`../images/tampa-wide.png`)}
           alt="branch"
         />
         <h1 id="about-header">A little about my journey...</h1>
@@ -24,8 +29,8 @@ class About extends Component {
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf"
-                  src={require(`../images/leaf-bw.jpg`)}
+                  className="leaf flip-card-back-bckgrnd"
+                  src={require(`../images/integral-background.jpg`)}
                   alt="leaf"
                 />
                 <div className="about-text">
@@ -60,8 +65,8 @@ class About extends Component {
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf"
-                  src={require(`../images/leaf-bw.jpg`)}
+                  className="leaf flip-card-back-bckgrnd"
+                  src={require(`../images/integral-background.jpg`)}
                   alt="leaf"
                 />
                 <div className="about-text">
@@ -96,8 +101,8 @@ class About extends Component {
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf"
-                  src={require(`../images/leaf-bw.jpg`)}
+                  className="leaf flip-card-back-bckgrnd"
+                  src={require(`../images/integral-background.jpg`)}
                   alt="leaf"
                 />
                 <div className="about-text">

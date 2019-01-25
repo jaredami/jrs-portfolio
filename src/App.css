@@ -75,8 +75,8 @@ body {
   font-size: 3vw;
   background: linear-gradient(
     45deg,
-    var(--color-1-very-light) 50%,
-    var(--color-2-very-light) 50%
+    var(--color-1-very-light) 40%,
+    var(--color-2-very-light) 60%
   );
   border: 0.5vw inset var(--white-1);
   border-radius: 50%;
@@ -242,9 +242,12 @@ body {
 
 #branch {
   position: absolute;
-  opacity: 0.02;
-  width: 100vw;
+  /* opacity: 0.02; */
+  opacity: 0.1;
+  /* width: 100vw; */
+  height: 120vmin;
   top: 100vh;
+  left: -10vw;
 }
 
 #about-header {
@@ -340,6 +343,7 @@ body {
   /* text-shadow: 1px 1px var(--black-3), 2px 2px var(--black-3),
     3px 3px var(--black-3), 4px 4px var(--black-3), 5px 5px var(--black-3),
     6px 6px var(--black-3); */
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
   background-clip: text;
   transition: all 300ms;
 }
@@ -357,6 +361,11 @@ body {
   );
   /* box-shadow: 20px 20px 110px rgba(0, 0, 0, 0.45) inset; */
   /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45) inset; */
+}
+
+.flip-card-back-bckgrnd {
+  opacity: 0.5;
+  width: 40vmin;
 }
 
 .about-icon-sm {
