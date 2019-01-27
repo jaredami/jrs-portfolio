@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
     this.state = {
       scrollAmount: 0,
-      scrollToTopButtonOpacity: 0
+      scrollToTopButtonOpacity: 0,
+      aboutOpacity: 0
     };
   }
   componentDidMount() {
@@ -32,10 +33,18 @@ class App extends Component {
       this.setState({
         scrollToTopButtonOpacity: 1
       });
-      console.log("visible");
     } else {
       this.setState({
         scrollToTopButtonOpacity: 0
+      });
+    }
+    if (this.state.scrollAmount > 600) {
+      this.setState({
+        aboutOpacity: 1
+      });
+    } else {
+      this.setState({
+        aboutOpacity: 0
       });
     }
   };
@@ -55,7 +64,7 @@ class App extends Component {
               id="home-button"
               style={{ opacity: this.state.scrollToTopButtonOpacity }}
             >
-              <i class="icon ion-md-home" id="home-icon" />
+              <i className="icon ion-md-home" id="home-icon" />
             </button>
           </a>
           <div className="nav-wrapper">
@@ -84,7 +93,7 @@ class App extends Component {
             <p id="down-arrow" className="ion-chevron-down" />
           </a>
         </div>
-        <About />
+        <About opacity={this.state.aboutOpacity} />
         <Work />
       </div>
     );

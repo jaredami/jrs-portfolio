@@ -10,33 +10,35 @@ class About extends Component {
           alt="branch"
         /> */}
         <img
-          id="branch"
+          id="about-bckgrnd"
           src={require(`../images/tampa-wide.png`)}
-          alt="branch"
+          alt="jared playing guitar"
         />
-        <h1 id="about-header">A little about my journey...</h1>
-        <div id="about-grid">
+        <h1 id="about-header" style={{ opacity: this.props.opacity }}>
+          A little about my journey...
+        </h1>
+        <div id="about-grid" style={{ opacity: this.props.opacity }}>
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  className="leaf"
+                  className="flip-card-bckgrnd"
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
                 {/* <span className="ion-music-note about-icon" name="musician" /> */}
-                <i class="icon ion-md-musical-notes about-icon" />
+                <i className="icon ion-md-musical-notes about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf flip-card-back-bckgrnd"
+                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
                   src={require(`../images/integral-background.jpg`)}
-                  alt="leaf"
+                  alt="flip-card-bckgrnd"
                 />
                 <div className="about-text">
                   <h1>
                     {/* <span className="ion-music-note about-icon-sm" /> */}
-                    <i class="icon ion-md-musical-notes about-icon-sm" />
+                    <i className="icon ion-md-musical-notes about-icon-sm" />
                     Musician
                   </h1>
                   <p>
@@ -57,28 +59,28 @@ class About extends Component {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  className="leaf"
+                  className="flip-card-bckgrnd"
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
                 {/* <span className="ion-university about-icon" /> */}
-                <i class="icon ion-md-school about-icon" />
+                <i className="icon ion-md-school about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf flip-card-back-bckgrnd"
+                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
                   src={require(`../images/integral-background.jpg`)}
-                  alt="leaf"
+                  alt="flip-card-bckgrnd"
                 />
                 <div className="about-text">
                   <h1>
                     {/* <span className="ion-university about-icon-sm" /> */}
-                    <i class="icon ion-md-school about-icon-sm" />
+                    <i className="icon ion-md-school about-icon-sm" />
                     Philosopher
                   </h1>
                   <p>
                     After calling it quits with the band, I returned to school
-                    to pursue a Master's degree in Philosophy, having developing
+                    to pursue a Master's degree in Philosophy, having developed
                     a deep fascination in questions regarding the nature of
                     consciousness and perception.
                   </p>
@@ -93,30 +95,30 @@ class About extends Component {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  className="leaf"
+                  className="flip-card-bckgrnd"
                   src={require(`../images/leaves-bw.png`)}
                   alt="leaves"
                 />
                 {/* <span className="ion-code about-icon" /> */}
-                <i class="icon ion-md-code about-icon" />
+                <i className="icon ion-md-code about-icon" />
               </div>
               <div className="flip-card-back">
                 <img
-                  className="leaf flip-card-back-bckgrnd"
+                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
                   src={require(`../images/integral-background.jpg`)}
-                  alt="leaf"
+                  alt="flip-card-bckgrnd"
                 />
                 <div className="about-text">
                   <h1>
                     {/* <span className="ion-code about-icon-sm" /> */}
-                    <i class="icon ion-md-code about-icon-sm" />
+                    <i className="icon ion-md-code about-icon-sm" />
                     Web Developer
                   </h1>
                   <p>
                     I picked up programming in 2017 and quickly fell in love
                     with making things with code. I have found that web
                     development allows me to continue to be both creative
-                    (music) and analytic (philosphy).
+                    (music) and analytic (philosophy).
                   </p>
                 </div>
               </div>
