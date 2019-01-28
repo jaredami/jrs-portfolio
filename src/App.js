@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import About from "./components/About";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +10,8 @@ class App extends Component {
     this.state = {
       scrollAmount: 0,
       scrollToTopButtonOpacity: 0,
-      aboutOpacity: 0
+      aboutOpacity: 0,
+      workOpacity: 0
     };
   }
   componentDidMount() {
@@ -45,6 +47,15 @@ class App extends Component {
     } else {
       this.setState({
         aboutOpacity: 0
+      });
+    }
+    if (this.state.scrollAmount > 1800) {
+      this.setState({
+        workOpacity: 1
+      });
+    } else {
+      this.setState({
+        worktOpacity: 0
       });
     }
   };
@@ -94,7 +105,8 @@ class App extends Component {
           </a>
         </div>
         <About opacity={this.state.aboutOpacity} />
-        <Work />
+        <Work opacity={this.state.workOpacity} />
+        <Contact />
       </div>
     );
   }
