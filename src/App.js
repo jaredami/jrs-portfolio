@@ -66,11 +66,6 @@ class App extends Component {
         <div id="jumbo-img" />
         <div id="jumbotron">
           <a href="#jumbotron">
-            {/* <button
-              className="ion-arrow-up-a"
-              id="home-button"
-              style={{ opacity: this.state.scrollToTopButtonOpacity }}
-            /> */}
             <button
               id="home-button"
               style={{ opacity: this.state.scrollToTopButtonOpacity }}
@@ -96,12 +91,7 @@ class App extends Component {
             <h1 id="info">Web Developer - Indianpolis, IN</h1>
           </div>
           <a id="down-arrow-link" href="#about-container">
-            {/* <img
-              id="down-arrow"
-              src={require(`./images/down-arrow.png`)}
-              alt="down arrow"
-            /> */}
-            <p id="down-arrow" className="ion-chevron-down" />
+            <p id="down-arrow" className="icon ion-md-arrow-dropdown" />
           </a>
         </div>
         <About opacity={this.state.aboutOpacity} />
