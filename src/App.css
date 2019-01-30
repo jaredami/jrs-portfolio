@@ -485,6 +485,7 @@ body {
 
 /* Contact */
 #contact-container {
+  position: relative;
   display: block;
   padding: 80px 0px;
   background: linear-gradient(
@@ -492,6 +493,16 @@ body {
     var(--color-1-very-light) 20%,
     var(--color-2-very-light) 80%
   );
+  overflow: hidden;
+}
+
+#contact-bckgrnd {
+  position: absolute;
+  opacity: 0.08;
+  /* height: 120vmin; */
+  width: 100vw;
+  top: -80px;
+  z-index: 1;
 }
 
 #contact-container h1 {
