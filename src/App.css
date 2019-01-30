@@ -487,8 +487,13 @@ figure {
   background-color: #d14233;
 }
 
+.project-screenshot {
+  width: 100%;
+  transition: all 300ms;
+}
+
 /* .project-screenshot:hover {
-  transform: scale(1.2);
+  filter: brightness(110%);
 } */
 
 .project-info {

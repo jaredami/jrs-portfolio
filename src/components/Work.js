@@ -10,19 +10,11 @@ class Work extends Component {
         </h1>
         <div id="work-grid" style={{ opacity: this.props.opacity }}>
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/integral.jpg`)}
-                alt="integral"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/integral.jpg`)}
+              alt="integral"
+            />
             <div className="project-info">
               <h1 className="project-name">Integral</h1>
               <p className="project-description">
@@ -49,7 +41,7 @@ class Work extends Component {
               <div className="project-links-container">
                 <a
                   className="code-link hvr-bounce-to-top"
-                  href="https://integral.netlify.com/"
+                  href="https://github.com/jaredami/integral-site"
                   rel="noopnener noreferrer"
                   target="_blank"
                 >
@@ -68,19 +60,11 @@ class Work extends Component {
           </div>
 
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/f3.jpg`)}
-                alt="family fun and fitness"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/f3.jpg`)}
+              alt="family fun and fitness"
+            />
             <div className="project-info">
               <h1 className="project-name">Family Fun &amp; Fitness</h1>
               <p className="project-description">
@@ -109,7 +93,7 @@ class Work extends Component {
               <div className="project-links-container">
                 <a
                   className="code-link hvr-bounce-to-top"
-                  href="https://integral.netlify.com/"
+                  href="https://github.com/jaredami/Family-Fun-and-Fitness"
                   rel="noopnener noreferrer"
                   target="_blank"
                 >
@@ -128,19 +112,11 @@ class Work extends Component {
           </div>
 
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/drum-machine.jpg`)}
-                alt="drum-machine"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/drum-machine.jpg`)}
+              alt="drum-machine"
+            />
             <div className="project-info">
               <h1 className="project-name">Drum Machine</h1>
               <p className="project-description">
@@ -178,19 +154,11 @@ class Work extends Component {
           </div>
 
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/meditation-timer-2.jpg`)}
-                alt="meditation timer"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/meditation-timer-2.jpg`)}
+              alt="meditation timer"
+            />
             <div className="project-info">
               <h1 className="project-name">Meditation Timer</h1>
               <p className="project-description">
@@ -230,19 +198,11 @@ class Work extends Component {
           </div>
 
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/simon.jpg`)}
-                alt="simon game"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/simon.jpg`)}
+              alt="simon game"
+            />
             <div className="project-info">
               <h1 className="project-name">Simon Game</h1>
               <p className="project-description">
@@ -320,19 +280,11 @@ class Work extends Component {
           </div> */}
 
           <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/calculator.jpg`)}
-                alt="calculator"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
+            <img
+              className="project-screenshot"
+              src={require(`../images/calculator.jpg`)}
+              alt="calculator"
+            />
             <div className="project-info">
               <h1 className="project-name">Calculator</h1>
               <p className="project-description">A virtual calculator.</p>
