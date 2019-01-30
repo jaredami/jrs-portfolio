@@ -499,10 +499,8 @@ body {
 #contact-bckgrnd {
   position: absolute;
   opacity: 0.08;
-  /* height: 120vmin; */
   width: 100vw;
   top: -80px;
-  z-index: 1;
 }
 
 #contact-container h1 {

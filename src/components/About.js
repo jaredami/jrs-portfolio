@@ -4,11 +4,6 @@ class About extends Component {
   render() {
     return (
       <div id="about-container">
-        {/* <img
-          id="branch"
-          src={require(`../images/leaves-2-bw.png`)}
-          alt="branch"
-        /> */}
         <img
           id="about-bckgrnd"
           src={require(`../images/tampa-wide.png`)}

@@ -40,7 +40,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://github.com/jaredami/integral-site"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -48,7 +48,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://integral.netlify.com/"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -92,7 +92,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://github.com/jaredami/Family-Fun-and-Fitness"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -100,7 +100,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://jareds.sgedu.site/"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -134,7 +134,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/zLagoa?editors=0010"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -142,7 +142,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/zLagoa"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -178,7 +178,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/NzeoYe?editors=0010"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -186,7 +186,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/NzeoYe"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -216,7 +216,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/MOvmrO?editors=0010"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -224,7 +224,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/MOvmrO"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -260,7 +260,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/bYEoQg"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -268,7 +268,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/bYEoQg"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -296,7 +296,7 @@ class Work extends Component {
               </ul>
               <div className="project-links-container">
                 <a
-                  className="code-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/pWdzrY?editors=0010/"
                   rel="noopnener noreferrer"
                   target="_blank"
@@ -304,7 +304,7 @@ class Work extends Component {
                   Code
                 </a>
                 <a
-                  className="external-link hvr-bounce-to-top"
+                  className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/pWdzrY"
                   rel="noopnener noreferrer"
                   target="_blank"
