@@ -30,6 +30,9 @@ class App extends Component {
   };
 
   handleUpdatedScrollAmount = () => {
+    let windowHeight = window.innerHeight;
+    console.log("window height: " + windowHeight);
+
     if (this.state.scrollAmount > 100) {
       this.setState({
         scrollToTopButtonOpacity: 1
@@ -39,7 +42,7 @@ class App extends Component {
         scrollToTopButtonOpacity: 0
       });
     }
-    if (this.state.scrollAmount > 600) {
+    if (this.state.scrollAmount > windowHeight / 2) {
       this.setState({
         aboutOpacity: 1
       });
@@ -48,7 +51,7 @@ class App extends Component {
         aboutOpacity: 0
       });
     }
-    if (this.state.scrollAmount > 1800) {
+    if (this.state.scrollAmount > windowHeight * 1.5) {
       this.setState({
         workOpacity: 1
       });
