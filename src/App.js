@@ -26,7 +26,6 @@ class App extends Component {
   // sets the state of width and height to match window dimensions, then calls function which changes display accordingly
   updateScrollAmount = () => {
     this.setState({ scrollAmount: window.scrollY });
-    console.log("scrollY: " + this.state.scrollAmount);
     this.handleUpdatedScrollAmount();
   };
 

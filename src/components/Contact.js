@@ -12,18 +12,28 @@ class Contact extends Component {
         /> */}
         <h1>
           Drop me a line at{" "}
-          <a href="#" rel="noopnener noreferrer" target="_blank">
-            jaredrstorm@gmail.com
-          </a>
+          <a href="jaredrstorm@gmail.com">jaredrstorm@gmail.com</a>
         </h1>
         <div id="contact-flexbox">
-          <a href="#" rel="noopnener noreferrer" target="_blank">
+          <a
+            href="https://github.com/jaredami"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="icon ion-logo-github" />
           </a>
-          <a href="#" rel="noopnener noreferrer" target="_blank">
+          <a
+            href="https://codepen.io/yaredami/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="icon ion-logo-codepen" />
           </a>
-          <a href="#" rel="noopnener noreferrer" target="_blank">
+          <a
+            href="https://www.instagram.com/jared_storm/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="icon ion-logo-instagram" />
           </a>
         </div>

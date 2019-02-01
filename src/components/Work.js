@@ -22,7 +22,7 @@ class Work extends Component {
                 full-length album, "Integral". The concept is based on{" "}
                 <a
                   href="https://www.researchgate.net/profile/Petra_Carman/publication/283009284/figure/fig4/AS:654044787904524@1532947837494/Spiral-Dynamics-model-duplication-from-Roemischer-2002.png"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Spiral Dynamics
@@ -42,7 +42,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://github.com/jaredami/integral-site"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -50,7 +50,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://integral.netlify.com/"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
@@ -71,7 +71,7 @@ class Work extends Component {
                 A complete redesign of the{" "}
                 <a
                   href="http://familyfunfit.com/newsite/"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   website
@@ -94,7 +94,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://github.com/jaredami/Family-Fun-and-Fitness"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -102,7 +102,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://jareds.sgedu.site/"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
@@ -136,7 +136,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/zLagoa?editors=0010"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -144,7 +144,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/zLagoa"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
@@ -180,7 +180,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/NzeoYe?editors=0010"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -188,7 +188,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/NzeoYe"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
@@ -218,7 +218,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/MOvmrO?editors=0010"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -226,7 +226,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/MOvmrO"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
@@ -234,50 +234,6 @@ class Work extends Component {
               </div>
             </div>
           </div>
-
-          {/* <div className="project">
-            <figure
-              className="imghvr-shutter-out-diag-1"
-              style={{ backgroundColor: "#232323" }}
-            >
-              <img
-                className="project-screenshot"
-                src={require(`../images/tic-tac-toe.jpg`)}
-                alt="tic-tac-toe"
-              />
-              <figcaption style={{ backgroundColor: "#f5f5f5" }}>
-                Hover Content
-              </figcaption>
-            </figure>
-            <div className="project-info">
-              <h1 className="project-name">Tic-Tac-Toe</h1>
-              <p className="project-description">A virtual tic-tac-toe game.</p>
-              <ul className="project-tools-list">
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>CSS3</li>
-                <li>HTML5</li>
-              </ul>
-              <div className="project-links-container">
-                <a
-                  className="hvr-bounce-to-top"
-                  href="https://codepen.io/yaredami/pen/bYEoQg"
-                  rel="noopnener noreferrer"
-                  target="_blank"
-                >
-                  Code
-                </a>
-                <a
-                  className="hvr-bounce-to-top"
-                  href="https://codepen.io/yaredami/full/bYEoQg"
-                  rel="noopnener noreferrer"
-                  target="_blank"
-                >
-                  External
-                </a>
-              </div>
-            </div>
-          </div> */}
 
           <div className="project">
             <img
@@ -298,7 +254,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/pen/pWdzrY?editors=0010/"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Code
@@ -306,7 +262,7 @@ class Work extends Component {
                 <a
                   className="hvr-bounce-to-top"
                   href="https://codepen.io/yaredami/full/pWdzrY"
-                  rel="noopnener noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   External
