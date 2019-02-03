@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../css/imagehover.min.css";
 
 class Work extends Component {
   render() {
