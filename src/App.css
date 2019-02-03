@@ -146,17 +146,7 @@ body {
   color: var(--white-1);
   text-shadow: 0px 0px 20px black;
   animation: fade-scrunch 3s;
-  /* font-family: "Brush Script MT", cursive;
-  font-family: "Lobster", cursive;
-  font-family: "Oleo Script", cursive;
-  font-family: "Leckerli One", cursive;
-  font-family: "Molle", cursive;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Cherry Swash", cursive; */
   font-family: "Oleo Script Swash Caps", cursive;
-  /* font-family: "Righteous", cursive;
-  font-family: "Croissant One", cursive;
-  font-family: "Berkshire Swash", cursive; */
 }
 
 .dark-wrapper {
@@ -180,12 +170,12 @@ body {
 }
 
 #down-arrow-link {
-  /* transform: translateY(40vmin); */
+  transform: translateY(40vh);
   display: block;
   width: 50px;
-  margin-top: -0px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   font-size: 50px;
   color: var(--white-1);
   text-decoration: none;
@@ -334,16 +324,7 @@ body {
   letter-spacing: 1.2px;
   font-weight: 400;
   transition: all 300ms ease;
-  /* font-family: "Pacifico", cursive;
-  font-family: "Oleo Script", cursive;
-  font-family: "Leckerli One", cursive;
-  font-family: "Molle", cursive;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Cherry Swash", cursive; */
   font-family: "Oleo Script Swash Caps", cursive;
-  /* font-family: "Righteous", cursive;
-  font-family: "Croissant One", cursive;
-  font-family: "Berkshire Swash", cursive; */
 }
 
 #about-grid p {
@@ -632,21 +613,6 @@ body {
     transform: translateY(60vh);
   }
 }
-
-/* @keyframes color-change-3x {
-  0% {
-    background: rgba(20, 56, 16, 0.5);
-    background: var(--color-1-very-light);
-  }
-  50% {
-    background: rgba(12, 42, 40, 0.5);
-    background: var(--color-2-very-light);
-  }
-  100% {
-    background: rgba(68, 41, 20, 0.5);
-    background: var(--color-3-very-light);
-  }
-} */
 
 /* used on #info */
 @keyframes scale-in-ver-bottom {
