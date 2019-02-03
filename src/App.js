@@ -7,7 +7,9 @@ import Contact from "./components/Contact";
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
+      // state for fade-on-scroll effects
       scrollAmount: 0,
       scrollToTopButtonOpacity: 0,
       aboutOpacity: 0,
@@ -15,7 +17,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    // listen for window resize, call function to handle any changes
+    // for use in fade-in-on scroll effects: listen for scrolling, call function to update state accordingly
     window.addEventListener("scroll", this.updateScrollAmount);
     this.updateScrollAmount();
   }
@@ -23,15 +25,16 @@ class App extends Component {
     window.removeEventListener("scroll", this.updateScrollAmount);
   }
 
-  // sets the state of width and height to match window dimensions, then calls function which changes display accordingly
+  // update state of scollAmount, call function to handle changes
   updateScrollAmount = () => {
     this.setState({ scrollAmount: window.scrollY });
     this.handleUpdatedScrollAmount();
   };
 
+  // depending on the amount scrolled, changed the value of opacity states to be passed as props to the relevent components
   handleUpdatedScrollAmount = () => {
+    // the scroll amount at which various elements should fade in depends on the window-height (since the window partially determines the how far down those elements are located), so we store it for use in calculations below
     let windowHeight = window.innerHeight;
-    console.log("window height: " + windowHeight);
 
     if (this.state.scrollAmount > 100) {
       this.setState({
