@@ -134,7 +134,7 @@ class Work extends Component {
               <div className="project-links-container">
                 <a
                   className="hvr-bounce-to-top"
-                  href="https://codepen.io/yaredami/pen/zLagoa?editors=0010"
+                  href="https://github.com/jaredami/drum-machine"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -142,7 +142,7 @@ class Work extends Component {
                 </a>
                 <a
                   className="hvr-bounce-to-top"
-                  href="https://codepen.io/yaredami/full/zLagoa"
+                  href="https://codepen.io/yaredami/full/aXyNJQ"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
