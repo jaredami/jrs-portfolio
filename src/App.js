@@ -93,7 +93,7 @@ class App extends Component {
           </div>
           <h1 id="greeting">Hi, I'm Jared.</h1>
           <div className="dark-wrapper">
-            <h1 id="info">Web Developer - Indianpolis, IN</h1>
+            <h1 id="info">Web Developer - Indianapolis, IN</h1>
           </div>
           <a id="down-arrow-link" href="#about-container">
             <p id="down-arrow" className="icon ion-md-arrow-dropdown" />
