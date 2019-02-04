@@ -193,15 +193,17 @@ body {
   padding-bottom: 30vh;
   background-color: var(--black-4);
   color: var(--white-1);
+  overflow: hidden;
 }
 
 #about-bckgrnd {
   position: absolute;
   opacity: 0.1;
-  height: 120vmin;
+  height: 100vmin;
+  margin: 0;
   top: 100vh;
-  left: -10vw;
-  animation: kenburns-left 30s linear infinite both;
+  left: -8vw;
+  animation: kenburns-left 20s linear infinite both;
 }
 
 #about-header {
@@ -335,6 +337,8 @@ body {
 
 /* Work */
 #work-container {
+  position: relative;
+  z-index: 10;
   min-height: 100vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -661,7 +665,7 @@ body {
     transform-origin: 16% 50%;
   }
   50% {
-    transform: scale(1.25) translate(-20px, 15px);
+    transform: scale(1.2) translate(-20px, 15px);
     transform-origin: left;
   }
   100% {

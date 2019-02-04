@@ -6,7 +6,7 @@ class About extends Component {
       <div id="about-container">
         <img
           id="about-bckgrnd"
-          src={require(`../images/tampa-wide.png`)}
+          src={require(`../images/tampa.png`)}
           alt="jared playing guitar"
         />
         <h1 id="about-header" style={{ opacity: this.props.opacity }}>
