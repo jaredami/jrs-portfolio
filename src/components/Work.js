@@ -113,7 +113,7 @@ class Work extends Component {
           <div className="project">
             <img
               className="project-screenshot"
-              src={require(`../images/drum-machine.jpg`)}
+              src={require(`../images/drum-machine-2.jpg`)}
               alt="drum-machine"
             />
             <div className="project-info">
