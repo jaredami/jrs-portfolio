@@ -113,7 +113,7 @@ class Work extends Component {
           <div className="project">
             <img
               className="project-screenshot"
-              src={require(`../images/drum-machine-2.jpg`)}
+              src={require(`../images/drum-machine.jpg`)}
               alt="drum-machine"
             />
             <div className="project-info">
@@ -142,7 +142,7 @@ class Work extends Component {
                 </a>
                 <a
                   className="hvr-bounce-to-top"
-                  href="https://codepen.io/yaredami/full/aXyNJQ"
+                  href="https://jrs-drum-machine.netlify.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
