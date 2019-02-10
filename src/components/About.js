@@ -24,11 +24,6 @@ class About extends Component {
                 <i className="icon ion-md-musical-notes about-icon" />
               </div>
               <div className="flip-card-back">
-                <img
-                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
-                  src={require(`../images/integral-background.jpg`)}
-                  alt="flip-card-bckgrnd"
-                />
                 <div className="about-text">
                   <h1>
                     <i className="icon ion-md-musical-notes about-icon-sm" />
@@ -58,11 +53,6 @@ class About extends Component {
                 <i className="icon ion-md-school about-icon" />
               </div>
               <div className="flip-card-back">
-                <img
-                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
-                  src={require(`../images/integral-background.jpg`)}
-                  alt="flip-card-bckgrnd"
-                />
                 <div className="about-text">
                   <h1>
                     <i className="icon ion-md-school about-icon-sm" />
@@ -92,11 +82,6 @@ class About extends Component {
                 <i className="icon ion-md-code about-icon" />
               </div>
               <div className="flip-card-back">
-                <img
-                  className="flip-card-bckgrnd flip-card-back-bckgrnd"
-                  src={require(`../images/integral-background.jpg`)}
-                  alt="flip-card-bckgrnd"
-                />
                 <div className="about-text">
                   <h1>
                     <i className="icon ion-md-code about-icon-sm" />
