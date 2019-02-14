@@ -87,7 +87,7 @@ class App extends Component {
                 <a href="#work-container">Work</a>
               </li>
               <li>
-                <a href="#about-container">Contact</a>
+                <a href="#contact-container">Contact</a>
               </li>
             </ul>
           </div>
