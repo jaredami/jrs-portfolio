@@ -11,6 +11,50 @@ class Work extends Component {
           <div className="project">
             <img
               className="project-screenshot"
+              src={require(`../images/to-do-list.jpg`)}
+              alt="to do list"
+            />
+            <div className="project-info">
+              <h1 className="project-name">To Do List</h1>
+              <p className="project-description">
+                A to do list app built with React and Redux. I used
+                styled-components for all styling, and the user is able to
+                toggle between light and dark color schemes with the click of a
+                button. Another tricky feature was enabling the user to select
+                list items by holding down the Shift key when clicking a
+                checkbox.
+              </p>
+              <ul className="project-tools-list">
+                <li>React</li>
+                <li>Redux</li>
+                <li>JavaScript</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+              </ul>
+              <div className="project-links-container">
+                <a
+                  className="hvr-bounce-to-top"
+                  href="https://github.com/jaredami/to-do-list"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Code
+                </a>
+                <a
+                  className="hvr-bounce-to-top"
+                  href="https://jrs-to-do-list.netlify.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  External
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="project">
+            <img
+              className="project-screenshot"
               src={require(`../images/integral.jpg`)}
               alt="integral"
             />
